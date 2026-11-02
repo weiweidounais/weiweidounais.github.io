@@ -3,72 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="weiweidounais 的个人空间：记录作品、想法，以及生活里的小小发现。">
-  <meta name="theme-color" content="#f5f4ed">
-  <title>weiweidounais · 个人主页</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%232d483d'/%3E%3Ctext x='50' y='73' text-anchor='middle' font-size='80' fill='%23f5f4ed'%3E✳%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta name="description" content="冯涌泉的个人网站。从制冷暖通与数据中心工程出发，探索 ToB AI、RAG 与 Agent 产品，记录项目实践与思考。">
+  <meta name="theme-color" content="#030014">
+  <meta property="og:title" content="冯涌泉 · 从工程现场到 AI 产品">
+  <meta property="og:description" content="理解真实问题，构建有用的 AI。工程经历、产品实践与学习思考。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://weiweidounais.github.io/">
+  <title>冯涌泉 · 从工程现场到 AI 产品</title>
+  <link rel="canonical" href="https://weiweidounais.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='16' fill='%23060017'/%3E%3Cg fill='none' stroke='%23b9a9ff' stroke-width='3'%3E%3Cpath d='m40 12 23 14v28L40 68 17 54V26Z'/%3E%3Cpath d='m17 26 23 14 23-14M40 40v28M40 12v28'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="script.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
-  <header class="header wrap">
-    <a class="brand" href="#" aria-label="回到首页"><span class="brand-mark" aria-hidden="true">✳</span><span data-name>weiweidounais</span><span class="brand-dot">.</span></a>
-    <nav aria-label="主导航"><a href="#work">作品</a><a href="#about">关于</a><a href="#notes">随笔</a><a class="nav-contact" href="#contact">聊一聊 <span aria-hidden="true">↗</span></a></nav>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-mark" viewBox="0 0 32 32"><path d="m16 3 11 6.5v13L16 29 5 22.5v-13Z"/><path d="m5 9.5 11 6.5 11-6.5M16 16v13M16 3v13"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4c4-1 6 0 9 1 3-1 5-2 9-1v15c-4-1-6 0-9 1-3-1-5-2-9-1Z"/></symbol>
+    <symbol id="i-loop" viewBox="0 0 24 24"><path d="M20 9a8 8 0 0 0-14-3L3 9m0-6v6h6M4 15a8 8 0 0 0 14 3l3-3m0 6v-6h-6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-3.4c0-1-.1-1.6-.5-2 3.2-.4 6.5-1.5 6.5-7A5.5 5.5 0 0 0 19.5 6c.1-.4.6-2-0.2-4 0 0-1.3-.4-4.3 1.6a15 15 0 0 0-6 0C6 1.6 4.7 2 4.7 2c-.8 2-.3 3.6-.2 4A5.5 5.5 0 0 0 3 9.6c0 5.5 3.3 6.6 6.5 7-.4.4-.5 1-.5 2V22"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="7" rx="1"/><rect x="4" y="14" width="16" height="7" rx="1"/><path d="M8 6.5h.01M8 17.5h.01M13 6.5h4M13 17.5h4M12 10v4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M19 4C8 2 3 7 5 14c2 7 16 6 14-10ZM5 20 16 9"/></symbol>
+  </defs></svg>
+  <header class="header">
+    <a class="brand" href="#" aria-label="冯涌泉，回到首页"><svg class="icon brand-icon"><use href="#i-mark"/></svg><span>冯涌泉<span class="brand-en"> / YONGQUAN</span></span></a>
+    <nav aria-label="主导航"><a href="#work">项目实践</a><a href="#about">关于我</a><a href="#thinking">思考</a></nav>
+    <a class="nav-github" href="https://github.com/weiweidounais" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon"><use href="#i-arrow"/></svg></a>
   </header>
-
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> 一个持续生长的个人空间</div>
-        <h1 id="hero-title">保持好奇，<br>把想法变成<span class="word">作品<svg viewBox="0 0 280 22" aria-hidden="true"><path d="M4 15 Q130 -1 274 12 M17 20 Q154 8 251 17"/></svg></span>。</h1>
-        <p class="hero-description">你好，欢迎来到我的小小角落。<br>这里收藏我的创作、思考，以及值得记录的日常。</p>
-        <div class="hero-actions"><a class="button" href="#work">看看我的作品 <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">多了解我一点 <span aria-hidden="true">→</span></a></div>
-        <p class="template-note">作品与随笔为示例 · 联系方式待补充</p>
+      <div class="starfield" aria-hidden="true"></div>
+      <p class="eyebrow"><svg class="icon"><use href="#i-spark"/></svg> 工程经验 × AI 产品实践</p>
+      <h1 id="hero-title">理解真实问题，<br>构建<span class="gradient-text">有用的 AI。</span></h1>
+      <p class="hero-description">我是冯涌泉。从制冷暖通、数据中心工程出发，<br class="desktop-break">探索 ToB AI 与智能体，让技术走进具体的工作。</p>
+      <div class="hero-actions"><a class="button primary" href="#work">探索我的实践 <svg class="icon"><use href="#i-arrow"/></svg></a><a class="button secondary" href="#about">认识我 <svg class="icon"><use href="#i-chevron"/></svg></a></div>
+      <p class="hero-signature">ENGINEERING MIND. PRODUCT CURIOSITY.</p>
+
+      <div class="practice-map rim-panel" aria-label="交互式个人实践地图">
+        <div class="map-topbar"><div><span class="tiny-star">✧</span> 我的实践地图 <span class="muted map-english">/ A WORK IN PROGRESS</span></div><span class="map-topbar-right"><span class="live-dot"></span> 连接经验与想法</span></div>
+        <div class="map-body">
+          <div class="map-sidebar"><span class="overline">EXPLORE</span><div role="tablist" aria-label="探索方向" aria-orientation="vertical"><button id="tab-industry" class="map-tab" role="tab" aria-selected="true" aria-controls="map-panel" data-map="industry"><svg class="icon"><use href="#i-server"/></svg> 工程 × AI <span>01</span></button><button id="tab-knowledge" class="map-tab" role="tab" aria-selected="false" aria-controls="map-panel" tabindex="-1" data-map="knowledge"><svg class="icon"><use href="#i-book"/></svg> 知识与协同 <span>02</span></button><button id="tab-companion" class="map-tab" role="tab" aria-selected="false" aria-controls="map-panel" tabindex="-1" data-map="companion"><svg class="icon"><use href="#i-leaf"/></svg> 健康与陪伴 <span>03</span></button></div><div class="map-sidebar-note"><svg class="icon"><use href="#i-mark"/></svg><p>从现场出发，<br>向产品延伸。</p></div></div>
+          <div class="map-main" role="tabpanel" id="map-panel" aria-labelledby="tab-industry" tabindex="0">
+            <div class="map-caption"><span id="map-topic">DOMAIN KNOWLEDGE → PRODUCT THINKING</span><span class="map-caption-star">✦</span></div>
+            <div class="constellation" aria-label="工程经验与 AI 产品的连接"><svg class="constellation-lines" viewBox="0 0 700 260" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="line-glow"><stop stop-color="#9382ff" stop-opacity=".06"/><stop offset=".5" stop-color="#9382ff" stop-opacity=".6"/><stop offset="1" stop-color="#9382ff" stop-opacity=".06"/></linearGradient></defs><path d="M350 130 150 65M350 130 550 60M350 130 120 190M350 130 560 195"/><ellipse cx="350" cy="130" rx="241" ry="90"/><ellipse cx="350" cy="130" rx="130" ry="119" transform="rotate(-25 350 130)"/></svg><span class="node node-one"><span class="node-point"></span><span id="node-one-label">现场经验</span></span><span class="node node-two"><span class="node-point"></span><span id="node-two-label">RAG / 知识检索</span></span><div class="core-node"><svg class="icon"><use href="#i-mark"/></svg><span id="node-core">工程 × AI</span><small>CONNECT THE DOTS</small></div><span class="node node-three"><span class="node-point"></span><span id="node-three-label">需求与场景</span></span><span class="node node-four"><span class="node-point"></span><span id="node-four-label">验证与交付</span></span><span class="map-star map-star-one">·</span><span class="map-star map-star-two">✧</span></div>
+            <div class="map-summary"><div><span class="overline" id="map-category">从行业理解到产品判断</span><h2 id="map-title">先理解现场，再设计智能。</h2><p id="map-description">把设备、流程与人的真实约束，带入行业 AI 的场景选择。</p></div><a id="map-link" href="#project-agent" aria-label="查看行业 AI 实践"><svg class="icon"><use href="#i-arrow"/></svg></a></div>
+          </div>
+        </div>
+        <div class="map-footer"><span><span class="live-dot"></span> 思考 · 构建 · 验证</span><span>PERSONAL EXPLORATIONS / 2026</span></div>
       </div>
-      <div class="hero-art" role="img" aria-label="绿色抽象花朵与轨道组成的创作主题插画">
-        <span class="art-label">A LITTLE CURIOUS. ALWAYS.</span>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="flower"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b></b></div>
-        <span class="art-spark spark-one">✧</span><span class="art-spark spark-two">✦</span>
-        <span class="art-note">想法，在这里发芽。</span><span class="art-coordinate">IDEAS → THINGS</span>
-      </div>
-      <div class="hero-bottom"><span>独立思考 / 认真创造 / 热爱生活</span><a href="#work" aria-label="向下浏览作品">向下探索 <span aria-hidden="true">↓</span></a></div>
+      <div class="focus-strip"><span>持续关注的方向</span><span>行业 AI</span><i></i><span>RAG & Agent</span><i></i><span>知识协同</span><i></i><span>产品验证</span></div>
     </section>
 
-    <section class="section wrap" id="work" aria-labelledby="work-title">
-      <div class="section-heading"><div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">做过的一些小事<span class="small-dot">.</span></h2></div><span class="section-aside">从一个想法，到一个具体的答案。</span></div>
-      <div class="projects">
-        <button class="project" data-detail="garden" aria-label="查看灵感花园示例项目">
-          <div class="project-art garden-art"><div class="mini-browser"><div class="mini-top"><span>garden.</span><span>一片灵感自留地 ↗</span></div><div class="garden-heading">让灵感，<br>慢慢生长。</div><div class="garden-pots"><span>✳</span><span>✽</span><span>✳</span></div><div class="mini-line"></div><div class="mini-line short"></div></div><span class="project-number">01</span></div>
-          <div class="project-info"><div><span class="project-category">网页设计 · 示例项目</span><h3>灵感花园</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-description">为零散的灵感，找一个可以生长的地方。</p>
-        </button>
-        <button class="project" data-detail="slow" aria-label="查看慢一点示例项目">
-          <div class="project-art slow-art"><div class="book book-back"></div><div class="book book-front"><span class="book-top">NOTES ON EVERYDAY LIFE</span><strong>慢<br>一<br>点<span>。</span></strong><span class="book-bottom">在日常里，重新发现日常。</span></div><span class="project-number">02</span></div>
-          <div class="project-info"><div><span class="project-category">视觉探索 · 示例项目</span><h3>慢一点，生活提案</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-description">用文字与留白，记录生活里的微小确幸。</p>
-        </button>
-        <button class="project" data-detail="focus" aria-label="查看专注时刻示例项目">
-          <div class="project-art focus-art"><div class="focus-window"><div class="focus-top">a moment for yourself <span>✧</span></div><div class="timer-ring"><span>25<span class="timer-colon">:</span>00</span></div><span class="focus-caption">此刻，只做一件事。</span><span class="focus-pill">开始专注 →</span></div><span class="project-number">03</span></div>
-          <div class="project-info"><div><span class="project-category">产品概念 · 示例项目</span><h3>专注时刻</h3></div><span class="project-arrow" aria-hidden="true">↗</span></div><p class="project-description">减少一点干扰，给真正重要的事多一点时间。</p>
-        </button>
+    <section id="work" class="section wrap" aria-labelledby="work-title">
+      <div class="section-heading"><p class="eyebrow small"><svg class="icon"><use href="#i-grid"/></svg> SELECTED EXPLORATIONS</p><h2 id="work-title">从问题出发的<span class="soft-text">产品实践。</span></h2><p>把行业理解、产品思考与动手实践，放在同一条链路里。</p></div>
+      <div class="project-grid">
+        <article class="project rim-panel" id="project-agent"><div class="project-visual visual-agent" aria-hidden="true"><div class="visual-topline"><span>DOMAIN AGENT</span><svg class="icon"><use href="#i-server"/></svg></div><div class="agent-stack"><div class="document-card doc-back"></div><div class="document-card doc-front"><svg class="icon"><use href="#i-book"/></svg><span>设备手册与运维规程</span><i></i><i></i><i></i></div><span class="stack-connector"></span><div class="retrieval-card"><span class="live-dot"></span> 检索 → 引用 → 复核 <svg class="icon"><use href="#i-spark"/></svg></div></div><span class="visual-caption">让行业知识，成为工作的依据。</span></div><div class="project-content"><div class="project-meta"><span>行业 AI / 个人实践</span><span>01</span></div><h3>暖通运维 Agent</h3><p>从熟悉的设备和运维场景出发，探索知识问答、巡检与告警的产品链路。</p><div class="project-tags"><span>RAG</span><span>Agent</span><span>IDC</span></div><button class="detail-button" data-detail="agent">查看实践思路 <svg class="icon"><use href="#i-arrow"/></svg></button></div></article>
+        <article class="project rim-panel" id="project-mideng"><div class="project-visual visual-mideng" aria-hidden="true"><div class="visual-topline"><span>KNOWLEDGE & COLLABORATION</span><svg class="icon"><use href="#i-grid"/></svg></div><div class="collab-flow"><div class="flow-entry"><span class="live-dot"></span> 同一份需求，同一个版本 <svg class="icon"><use href="#i-loop"/></svg></div><div class="flow-branch"></div><div class="flow-roles"><span>设计</span><span>采购</span><span>项目</span></div><div class="flow-check"><svg class="icon"><use href="#i-book"/></svg><span>版本留痕 · 责任明确 · 变更可见</span></div></div><span class="visual-caption">少一次解释，少一轮返工。</span></div><div class="project-content"><div class="project-meta"><span>ToB / 产品实践</span><span>02</span></div><h3>密灯 · 知识与协同</h3><p>围绕跨部门交接中的版本、变更与责任边界，探索企业知识和协作工作台。</p><div class="project-tags"><span>企业知识库</span><span>协同流程</span></div><button class="detail-button" data-detail="mideng">查看产品思考 <svg class="icon"><use href="#i-arrow"/></svg></button></div></article>
+        <article class="project rim-panel" id="project-yangya"><div class="project-visual visual-yangya" aria-hidden="true"><div class="visual-topline"><span>HABITS & COMPANIONSHIP</span><svg class="icon"><use href="#i-leaf"/></svg></div><div class="growth-orbit"><div class="growth-ring"></div><div class="growth-ring inner"></div><div class="growth-core"><svg class="icon"><use href="#i-leaf"/></svg></div><span class="orbit-label label-record">日常记录</span><span class="orbit-label label-feedback">陪伴反馈</span><span class="orbit-label label-growth">一点点成长</span></div><span class="visual-caption">让每一小步，都有一点回应。</span></div><div class="project-content"><div class="project-meta"><span>健康陪伴 / 产品探索</span><span>03</span></div><h3>养芽 · 健康陪伴</h3><p>以 AI 陪伴宠与能量账本为切入点，探索饮食、运动记录和持续反馈的连接。</p><div class="project-tags"><span>AI 陪伴</span><span>健康 H5</span></div><button class="detail-button" data-detail="yangya">查看探索方向 <svg class="icon"><use href="#i-arrow"/></svg></button></div></article>
       </div>
+      <p class="section-footnote">以上为个人与协作实践的概要，卡片图形为思路示意；不代表商业上线或已验证的业务成果。</p>
     </section>
 
-    <section class="about-band" id="about" aria-labelledby="about-title"><div class="about-layout wrap">
-      <div><p class="section-kicker">02 / A LITTLE ABOUT ME</p><h2 id="about-title">认真做事，<br>也认真<span class="serif">生活。</span></h2><span class="about-flower" aria-hidden="true">✳</span></div>
-      <div class="about-copy"><p class="about-lead">相信好的想法，来自对世界的好奇。<br>好的作品，来自一次次动手尝试。</p><p>这是留给自我介绍的位置。你可以在这里写下正在做的事、关注的领域，以及希望与什么样的人建立连接。不必面面俱到，几个真实的细节就足够让人认识你。</p><div class="tags"><span>保持好奇</span><span>持续学习</span><span>动手创造</span><span>感受日常</span></div><div class="currently"><span class="status-dot"></span> 现在进行时 <span>学习、尝试，慢慢积累。</span></div></div>
+    <section id="about" class="section about-section wrap" aria-labelledby="about-title"><div class="aurora-divider"></div><div class="about-intro"><div><p class="eyebrow small"><svg class="icon"><use href="#i-mark"/></svg> THE PERSON BEHIND THE WORK</p><h2 id="about-title">有工程的底色，<br>也有产品的<span class="gradient-text">好奇心。</span></h2></div><div class="about-copy"><p>你好，我是冯涌泉。</p><p>我的职业起点是制冷与暖通工程，后来进入数据中心领域，参与图纸深化、施工协同、设备调试与验收衔接。</p><p>这些经历让我习惯先看现场，再谈方案。现在，我把这套思考方式带到 AI 产品实践中，关注 ToB、行业智能体与知识协同。</p><p>我在意的不只是回答是否流畅，更是问题有没有被理解、流程能不能走通、结果是否可以验证。</p></div></div>
+      <div class="experience-grid"><div><span class="experience-index">01 / FOUNDATION</span><svg class="icon"><use href="#i-server"/></svg><h3>工程现场</h3><p>制冷暖通、数据中心与冷板液冷。<br>理解设备、流程与交付的现实约束。</p></div><div><span class="experience-index">02 / EXPLORATION</span><svg class="icon"><use href="#i-spark"/></svg><h3>AI 产品实践</h3><p>RAG、Agent 与企业知识协同。<br>从具体任务定义产品的范围和边界。</p></div><div><span class="experience-index">03 / PRINCIPLE</span><svg class="icon"><use href="#i-loop"/></svg><h3>闭环与验证</h3><p>需求、执行、反馈与复盘。<br>让每一步都能被检查，也能被改进。</p></div></div>
+    </section>
+
+    <section id="thinking" class="section thinking-section wrap" aria-labelledby="thinking-title"><div class="section-heading"><p class="eyebrow small"><svg class="icon"><use href="#i-book"/></svg> NOTES ALONG THE WAY</p><h2 id="thinking-title">在实践之外，<span class="soft-text">继续追问。</span></h2><p>把阅读和学习，慢慢整理成自己的判断。</p></div><div class="note-list">
+      <button class="note-row" data-detail="handoff"><span class="note-index">01</span><div><span class="note-category">组织协同 / 学习整理</span><h3>比增加一个聊天框更重要的，是理清交接。</h3><p>从版本、责任与变更出发，理解企业里的协作成本。</p></div><svg class="icon"><use href="#i-arrow"/></svg></button>
+      <button class="note-row" data-detail="agent-loop"><span class="note-index">02</span><div><span class="note-category">AGENT / 学习整理</span><h3>回答完整，和事情办成，是两种标准。</h3><p>关注执行状态、工具反馈，以及出错后的恢复路径。</p></div><svg class="icon"><use href="#i-arrow"/></svg></button>
+      <button class="note-row" data-detail="evidence"><span class="note-index">03</span><div><span class="note-category">RAG / 学习整理</span><h3>先问依据在哪里，再判断答案好不好。</h3><p>把资料、检索和回答拆开，才能找到问题发生的环节。</p></div><svg class="icon"><use href="#i-arrow"/></svg></button>
     </div></section>
 
-    <section class="section notes-section wrap" id="notes" aria-labelledby="notes-title">
-      <div class="section-heading"><div><p class="section-kicker">03 / NOTES & THOUGHTS</p><h2 id="notes-title">留下一些想法<span class="small-dot">.</span></h2></div><span class="section-aside">不急着给答案，先认真地观察。</span></div>
-      <button class="note-row" data-detail="start"><span class="note-index">01</span><h3>先开始，再慢慢变好</h3><span class="note-tag">关于创造 · 示例随笔</span><span class="note-arrow" aria-hidden="true">↗</span></button>
-      <button class="note-row" data-detail="observe"><span class="note-index">02</span><h3>把注意力还给日常</h3><span class="note-tag">生活观察 · 示例随笔</span><span class="note-arrow" aria-hidden="true">↗</span></button>
-    </section>
-
-    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><div><p class="section-kicker">LET’S MAKE SOMETHING GOOD</p><h2 id="contact-title">下一件有趣的事，<br>或许从一句<span class="serif">你好</span>开始。</h2><p>关于合作、想法，或者只是打个招呼。</p></div><a class="contact-button" id="contact-link" href="#contact-status">聊一聊 <span aria-hidden="true">↗</span></a><p id="contact-status" class="contact-status">联系方式待补充</p></section>
+    <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><div class="aurora-divider"></div><svg class="icon contact-mark"><use href="#i-mark"/></svg><p class="overline">LET’S CONNECT THE DOTS</p><h2 id="contact-title">下一次交流，<br>从一个<span class="gradient-text">真实问题</span>开始。</h2><p>关于行业 AI、产品实践，或一个值得一起琢磨的问题。</p><a class="button primary" href="https://github.com/weiweidounais" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#i-github"/></svg> 在 GitHub 找到我 <svg class="icon"><use href="#i-arrow"/></svg></a><span class="contact-handle">@weiweidounais</span></section>
   </main>
-  <footer class="footer wrap"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span><span data-name>weiweidounais</span><span class="brand-dot">.</span></a><span>© <span id="year">2026</span> · 保持好奇，持续创造。</span><a href="#">回到顶部 ↑</a></footer>
-
-  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="关闭详情">×</button><p class="section-kicker" id="dialog-label"></p><h2 id="dialog-title"></h2><div id="dialog-content"></div><button class="button dialog-done">继续浏览 <span aria-hidden="true">→</span></button></dialog>
+  <footer class="footer wrap"><a class="brand" href="#"><svg class="icon"><use href="#i-mark"/></svg> 冯涌泉</a><span>© <span id="year">2026</span> · 从真实问题出发。</span><a href="https://github.com/weiweidounais/weiweidounais.github.io" target="_blank" rel="noopener noreferrer">网站源码 <svg class="icon"><use href="#i-arrow"/></svg></a></footer>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="关闭详情">×</button><p class="overline" id="dialog-label"></p><h2 id="dialog-title"></h2><div id="dialog-content"></div><button class="button secondary dialog-done">返回浏览 <svg class="icon"><use href="#i-chevron"/></svg></button></dialog>
 </body>
 </html>
