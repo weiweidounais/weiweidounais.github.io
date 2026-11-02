@@ -1,8 +1,8 @@
 // 站点内容均为公开展示概要；原始知识库、内部资料及联系方式不随站点发布。
 const mapContent = {
-  industry: { topic: "DOMAIN KNOWLEDGE → PRODUCT THINKING", core: "工程 × AI", nodes: ["现场经验", "RAG / 知识检索", "需求与场景", "验证与交付"], category: "从行业理解到产品判断", title: "先理解现场，再设计智能。", description: "把设备、流程与人的真实约束，带入行业 AI 的场景选择。", link: "#project-agent", linkLabel: "查看行业 AI 实践" },
-  knowledge: { topic: "SHARED CONTEXT → BETTER COLLABORATION", core: "知识与协同", nodes: ["需求与交底", "同版本同步", "责任与变更", "知识可追溯"], category: "密灯 / 企业知识与协同实践", title: "让交接有依据，让变化可追踪。", description: "从设计、采购与项目协作的交接问题，思考知识工作台的价值。", link: "#project-mideng", linkLabel: "查看密灯产品实践" },
-  companion: { topic: "SMALL ACTIONS → MEANINGFUL FEEDBACK", core: "健康与陪伴", nodes: ["饮食记录", "AI 陪伴宠", "运动习惯", "能量账本"], category: "养芽 / 健康陪伴产品探索", title: "让日常的小行动，得到回应。", description: "连接饮食、运动和陪伴反馈，探索更容易坚持的健康记录体验。", link: "#project-yangya", linkLabel: "查看养芽产品探索" },
+  industry: { topic: "行业理解 → 产品思考", core: "工程 × AI", nodes: ["现场经验", "RAG / 知识检索", "需求与场景", "验证与交付"], category: "从行业理解到产品判断", title: "先理解现场，再设计智能。", description: "把设备、流程与人的真实约束，带入行业 AI 的场景选择。", link: "#project-agent", linkLabel: "查看行业 AI 实践" },
+  knowledge: { topic: "共享信息 → 高效协同", core: "知识与协同", nodes: ["需求与交底", "同版本同步", "责任与变更", "知识可追溯"], category: "密灯 / 企业知识与协同实践", title: "让交接有依据，让变化可追踪。", description: "从设计、采购与项目协作的交接问题，思考知识工作台的价值。", link: "#project-mideng", linkLabel: "查看密灯产品实践" },
+  companion: { topic: "日常行动 → 有意义的反馈", core: "健康与陪伴", nodes: ["饮食记录", "AI 陪伴宠", "运动习惯", "能量账本"], category: "养芽 / 健康陪伴产品探索", title: "让日常的小行动，得到回应。", description: "连接饮食、运动和陪伴反馈，探索更容易坚持的健康记录体验。", link: "#project-yangya", linkLabel: "查看养芽产品探索" },
 };
 const tabs = [...document.querySelectorAll("[data-map]")];
 const compactLayout = matchMedia("(max-width: 700px)");
